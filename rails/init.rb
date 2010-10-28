@@ -1,0 +1,1 @@
+require "currency_select"
