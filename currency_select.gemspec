@@ -19,11 +19,14 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
      ".gitignore",
+     "Gemfile",
      "LICENSE",
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "currency_select.gemspec",
      "lib/currency_select.rb",
+     "rails/init.rb",
      "test/helper.rb",
      "test/test_currency_select.rb"
   ]
