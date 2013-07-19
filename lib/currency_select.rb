@@ -3,7 +3,7 @@ require "money"
 module CurrencySelect
   class << self
 
-    CURRENCIES = Money::Currency::TABLE.inject([]) do |array, (id, currency)|
+    CURRENCIES = Money::Currency::table.inject([]) do |array, (id, currency)|
       array << [ "#{currency[:name]} - #{currency[:iso_code]}", id ]
     end.sort_by { |currency| currency.first.parameterize } unless const_defined?("CURRENCIES")
 
