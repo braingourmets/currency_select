@@ -79,7 +79,7 @@ module ActionView
     if defined?(ActionView::Helpers::InstanceTag) &&
         ActionView::Helpers::InstanceTag.instance_method(:initialize).arity != 0
       class InstanceTag
-        include ToCountrySelectTag
+        include ToCurrencySelectTag
       end
     else
       class CurrencySelectTag < Tags::Base
