@@ -1,7 +1,7 @@
 require "rake"
 require "bundler"
 require "rake/testtask"
-require "rake/rdoctask"
+require "rdoc/task"
 
 # Gemcutter/Jeweler configuration
 # -----------------------------------------------------------------------------
@@ -17,8 +17,7 @@ begin
     gem.email = "tanordheim@gmail.com"
     gem.homepage = "http://github.com/tanordheim/currency_select"
     gem.authors = [ "Trond Arve Nordheim" ]
-
-    gem.add_bundler_dependencies
+    gem.version = File.read('VERSION').chomp
 
   end
   
