@@ -19,7 +19,7 @@ module CurrencySelect
     #   priority_currencies_array([ "USD", "NOK" ])
     #   # => [ ['United States Dollar - USD', 'USD' ], ['Norwegian Kroner - NOK', 'NOK'] ]
     def priority_currencies_array(currency_codes = [])
-      currencies_array.select { |currency| currency_codes.include?(currency.last.to_s) }
+      currency_codes.flat_map { |code| currencies_array.select { |currency| currency.last.to_s == code }}
     end
 
   end
