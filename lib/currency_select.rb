@@ -5,7 +5,7 @@ module CurrencySelect
 
     CURRENCIES = Money::Currency::table.inject([]) do |array, (id, currency)|
       array << [ "#{currency[:name]} - #{currency[:iso_code]}", id ]
-    end.sort_by { |currency| currency.first.parameterize } unless const_defined?("CURRENCIES")
+    end.sort_by { |currency| currency.first } unless const_defined?("CURRENCIES")
 
     # Returns an array with ISO codes and currency names for <tt>option</tt>
     # tags.

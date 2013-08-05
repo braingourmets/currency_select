@@ -40,6 +40,8 @@ Gem::Specification.new do |s|
      "test/test_currency_select.rb"
   ]
 
+  s.add_development_dependency 'rspec'
+
   if s.respond_to? :specification_version then
     s.specification_version = 3
 
