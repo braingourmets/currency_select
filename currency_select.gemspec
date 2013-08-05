@@ -35,6 +35,8 @@ Gem::Specification.new do |s|
   s.rubygems_version = "1.8.23"
   s.summary = "Currency Select plugin for Rails"
 
+  s.add_development_dependency 'rspec'
+
   if s.respond_to? :specification_version then
     s.specification_version = 3
 
