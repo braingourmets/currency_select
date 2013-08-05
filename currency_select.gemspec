@@ -27,8 +27,8 @@ Gem::Specification.new do |s|
     "currency_select.gemspec",
     "lib/currency_select.rb",
     "rails/init.rb",
-    "test/helper.rb",
-    "test/test_currency_select.rb"
+    "spec/currency_select_spec.rb",
+    "spec/spec_helper.rb"
   ]
   s.homepage = "http://github.com/tanordheim/currency_select"
   s.require_paths = ["lib"]
