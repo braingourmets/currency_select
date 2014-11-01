@@ -2,11 +2,11 @@ GEM
   remote: https://rubygems.org/
   specs:
     i18n (0.6.4)
-    money (5.1.1)
+    money (6.0.0)
       i18n (~> 0.6.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  money (~> 5.1.1)
+  money
