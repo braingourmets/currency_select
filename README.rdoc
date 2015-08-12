@@ -9,7 +9,7 @@ The list of currencies are provided by the {Money}[http://money.rubyforge.org/] 
 
 Add the following to your Gemfile
 
-gem 'currency_select', github: 'tanordheim/currency_select'
+gem 'currency_select', :git => 'https://github.com/tanordheim/currency_select.git'
 
 
 = Example
