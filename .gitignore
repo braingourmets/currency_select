@@ -2,5 +2,6 @@
 .document
 *.swp
 coverage
+Gemfile.lock
 rdoc
 pkg
