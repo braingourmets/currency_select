@@ -1,0 +1,44 @@
+sudo: false
+
+language: ruby
+
+cache: bundler
+
+rvm:
+  - 2.0.0
+  - 2.1
+  - 2.2.7
+  - 2.3.4
+  - 2.4.1
+
+gemfile:
+  - Gemfile
+  - gemfiles/Gemfile.rails-4-2
+  - gemfiles/Gemfile.rails-5-0
+  - gemfiles/Gemfile.rails-5-1
+
+install:
+  # This is to avoid a frozen string issue in RubyGems with Ruby 2.3.3.
+  # @see https://github.com/rubygems/rubygems/pull/1819
+  - gem update --system --no-doc
+  - gem install bundler
+  - bundle install
+
+script:
+  - bundle exec rspec spec/
+
+matrix:
+  fast_finish: true
+  exclude:
+    - gemfile: Gemfile
+      rvm: 2.0.0
+    - gemfile: Gemfile
+      rvm: 2.1
+    - gemfile: gemfiles/Gemfile.rails-5-0
+      rvm: 2.0.0
+    - gemfile: gemfiles/Gemfile.rails-5-0
+      rvm: 2.1
+    - gemfile: gemfiles/Gemfile.rails-5-1
+      rvm: 2.0.0
+    - gemfile: gemfiles/Gemfile.rails-5-1
+      rvm: 2.1
