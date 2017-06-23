@@ -1,21 +1,23 @@
-= CurrencySelect
+# CurrencySelect
 
 Adds a currency_select helper to Ruby on Rails projects, allowing you to get
 a HTML select list of available currencies.
 
-The list of currencies are provided by the {Money}[http://money.rubyforge.org/] gem.
+The list of currencies are provided by the [Money](http://money.rubyforge.org/)
+gem.
 
-= Installation
+
+## Installation
 
 Add the following to your Gemfile
 
 gem 'currency_select', github: 'tanordheim/currency_select'
 
 
-= Example
+## Example
 
-currency_select("user", "currency")
+    currency_select("user", "currency")
 
-== Copyright
+## Copyright
 
 Copyright (c) 2010 Trond Arve Nordheim. See LICENSE for details.
