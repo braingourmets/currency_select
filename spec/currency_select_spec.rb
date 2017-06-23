@@ -15,7 +15,7 @@ module ActionView
       let(:user) { User.new }
       let(:template) { ActionView::Base.new }
       let(:select_tag) do
-        "<select id=\"user_currency_code\" name=\"user[currency_code]\">"
+        "<select name=\"user[currency_code]\" id=\"user_currency_code\">"
       end
 
       let(:selected_eur_option) do
