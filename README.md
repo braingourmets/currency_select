@@ -12,14 +12,15 @@ gem.
 
 ## Installation
 
-Add the following to your Gemfile
+Add the following to your Gemfile:
 
-gem 'currency_select', github: 'tanordheim/currency_select'
+    gem 'currency_select'
 
 
 ## Example
 
     currency_select("user", "currency")
+
 
 ## Copyright
 
