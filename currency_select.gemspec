@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
+version = File.read(File.expand_path('../VERSION', __FILE__)).strip
+
 Gem::Specification.new do |s|
   s.name = 'currency_select'
   s.summary = 'Currency select plugin for Rails'
-  s.version = '0.1.5'
+  s.version = version
   s.license = 'MIT'
 
   s.homepage = 'https://github.com/braingourmets/currency_select'
