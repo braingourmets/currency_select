@@ -12,6 +12,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 ### Changed
+- Mark all Ruby files as frozen_string_literal: true
+  ([#31](https://github.com/braingourmets/currency_select/pull/31))
 
 
 ### Deprecated
