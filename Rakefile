@@ -16,11 +16,11 @@ begin
     gem.description = "Adds a currency_select helper to Ruby on Rails projects"
     gem.email = "tanordheim@gmail.com"
     gem.homepage = "http://github.com/tanordheim/currency_select"
-    gem.authors = [ "Trond Arve Nordheim" ]
+    gem.authors = ["Trond Arve Nordheim"]
     gem.version = File.read('VERSION').chomp
 
   end
-  
+
   Jeweler::GemcutterTasks.new
 
 rescue LoadError
@@ -40,7 +40,7 @@ end
 # RDoc setup
 # ----------------------------------------------------------------------------
 Rake::RDocTask.new do |rdoc|
-  
+
   version = File.exists?("VERSION") ? File.read("VERSION") : ""
 
   rdoc.rdoc_dir = "rdoc"
