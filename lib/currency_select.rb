@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-require "money"
+require 'money'
 
 module CurrencySelect
   class << self
 
     CURRENCIES = Money::Currency::table.inject([]) do |array, (id, currency)|
       array << ["#{currency[:name]} - #{currency[:iso_code]}", currency[:iso_code]]
-    end.sort_by {|currency| currency.first} unless const_defined?("CURRENCIES")
+    end.sort_by {|currency| currency.first} unless const_defined?('CURRENCIES')
 
     # Returns an array with ISO codes and currency names for <tt>option</tt>
     # tags.
@@ -52,7 +52,7 @@ module ActionView
       # +priority_currencies+, so that they will be listed above the rest of
       # the list.
       def currency_options_for_select(selected = nil, priority_currencies = nil)
-        currency_options = "".html_safe
+        currency_options = ''.html_safe
 
         if priority_currencies
           currency_options += options_for_select(::CurrencySelect::priority_currencies_array(priority_currencies), selected)

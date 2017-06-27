@@ -17,7 +17,7 @@ module ActionView
       let(:user) {User.new}
       let(:template) {ActionView::Base.new}
       let(:select_tag) do
-        "<select name=\"user[currency_code]\" id=\"user_currency_code\">"
+        '<select name="user[currency_code]" id="user_currency_code">'
       end
 
       let(:selected_eur_option) do
@@ -36,38 +36,38 @@ module ActionView
         end
       end
 
-      describe "currency_select" do
+      describe 'currency_select' do
         let(:tag) {builder.currency_select(:currency_code)}
 
-        it "creates a select tag" do
+        it 'creates a select tag' do
           expect(tag).to include(select_tag)
         end
 
-        it "creates option tags for each currency" do
+        it 'creates option tags for each currency' do
           ::CurrencySelect.currencies_array.each do |name, code|
             expect(tag).to include(content_tag(:option, name, value: code))
           end
         end
 
-        it "selects the value of currency_code" do
+        it 'selects the value of currency_code' do
           user.currency_code = 'EUR'
           t = builder.currency_select(:currency_code)
           expect(t).to include(selected_eur_option)
         end
 
-        it "does not mark two currencies as selected" do
+        it 'does not mark two currencies as selected' do
           user.currency_code = 'USD'
           expect(tag.scan(/selected="selected"/).count).to eq(1)
         end
 
-        describe "priority currencies" do
+        describe 'priority currencies' do
           let(:tag) {builder.currency_select(:currency_code, ['EUR'])}
 
-          it "inserts the priority currencies at the top" do
+          it 'inserts the priority currencies at the top' do
             expect(tag).to include("#{select_tag}<option value=\"EUR")
           end
 
-          it "inserts a divider" do
+          it 'inserts a divider' do
             expect(tag).to include('<option value="" disabled="disabled">-------------</option>')
           end
         end
