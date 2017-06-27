@@ -55,8 +55,7 @@ module ActionView
 
         it "does not mark two currencies as selected" do
           user.currency_code = 'USD'
-          str = '<option value="USD" selected="selected">United States</option>'.html_safe
-          expect(tag).to_not include(str)
+          expect(tag.scan(/selected="selected"/).count).to eq(1)
         end
 
         describe "priority currencies" do
