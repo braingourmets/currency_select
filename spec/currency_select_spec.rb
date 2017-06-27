@@ -20,9 +20,9 @@ module ActionView
 
       let(:selected_eur_option) do
         if defined?(Tags::Base)
-          content_tag(:option, 'Euro - EUR', selected: :selected, value: 'eur')
+          content_tag(:option, 'Euro - EUR', selected: :selected, value: 'EUR')
         else
-          "<option value=\"eur\" selected=\"selected\">Euro - EUR</option>"
+          '<option value="EUR" selected="selected">Euro - EUR</option>'
         end
       end
 
@@ -48,26 +48,26 @@ module ActionView
         end
 
         it "selects the value of currency_code" do
-          user.currency_code = 'eur'
+          user.currency_code = 'EUR'
           t = builder.currency_select(:currency_code)
           expect(t).to include(selected_eur_option)
         end
 
         it "does not mark two currencies as selected" do
-          user.currency_code = "usd"
-          str = "<option value=\"us\" selected=\"selected\">United States</option>".html_safe
+          user.currency_code = 'USD'
+          str = '<option value="USD" selected="selected">United States</option>'.html_safe
           expect(tag).to_not include(str)
         end
 
         describe "priority currencies" do
-          let(:tag) { builder.currency_select(:currency_code, ['eur']) }
+          let(:tag) { builder.currency_select(:currency_code, ['EUR']) }
 
           it "inserts the priority currencies at the top" do
-            expect(tag).to include("#{select_tag}<option value=\"eur")
+            expect(tag).to include("#{select_tag}<option value=\"EUR")
           end
 
           it "inserts a divider" do
-            expect(tag).to include("<option value=\"\" disabled=\"disabled\">-------------</option>")
+            expect(tag).to include('<option value="" disabled="disabled">-------------</option>')
           end
         end
       end

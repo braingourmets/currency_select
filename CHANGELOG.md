@@ -21,6 +21,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 ### Fixed
+- Use ISO codes as select values, not the IDs
+  ([#24](https://github.com/braingourmets/currency_select/pull/24))
 - Fix the the Gemfile
   ([#19](https://github.com/braingourmets/currency_select/pull/19))
 - Fix the order of name attribute and ID in the specs
