@@ -20,8 +20,3 @@ Add the following to your Gemfile:
 ## Example
 
     currency_select("user", "currency")
-
-
-## Copyright
-
-Copyright (c) 2010 Trond Arve Nordheim. See LICENSE for details.
