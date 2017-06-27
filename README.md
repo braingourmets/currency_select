@@ -1,6 +1,6 @@
 # CurrencySelect
 
-[![Build Status](https://travis-ci.org/oliverklee/currency_select.svg?branch=master)](https://travis-ci.org/oliverklee/currency_select)
+[![Build Status](https://travis-ci.org/braingourmets/currency_select.svg?branch=master)](https://travis-ci.org/braingourmets/currency_select)
 [![Gem Version](https://badge.fury.io/rb/currency_select.svg)](http://badge.fury.io/rb/currency_select)
 
 Adds a currency_select helper to Ruby on Rails projects, allowing you to get
