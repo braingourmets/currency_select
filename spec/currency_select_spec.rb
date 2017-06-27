@@ -12,8 +12,8 @@ module ActionView
         attr_accessor :currency_code
       end
 
-      let(:user) { User.new }
-      let(:template) { ActionView::Base.new }
+      let(:user) {User.new}
+      let(:template) {ActionView::Base.new}
       let(:select_tag) do
         "<select name=\"user[currency_code]\" id=\"user_currency_code\">"
       end
@@ -30,12 +30,12 @@ module ActionView
         if defined?(Tags::Base)
           FormBuilder.new(:user, user, template, {})
         else
-          FormBuilder.new(:user, user, template, {}, Proc.new { })
+          FormBuilder.new(:user, user, template, {}, Proc.new {})
         end
       end
 
       describe "currency_select" do
-        let(:tag) { builder.currency_select(:currency_code) }
+        let(:tag) {builder.currency_select(:currency_code)}
 
         it "creates a select tag" do
           expect(tag).to include(select_tag)
@@ -60,7 +60,7 @@ module ActionView
         end
 
         describe "priority currencies" do
-          let(:tag) { builder.currency_select(:currency_code, ['EUR']) }
+          let(:tag) {builder.currency_select(:currency_code, ['EUR'])}
 
           it "inserts the priority currencies at the top" do
             expect(tag).to include("#{select_tag}<option value=\"EUR")
