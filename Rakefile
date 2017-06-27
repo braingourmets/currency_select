@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "rake"
 require "bundler"
 require "rake/testtask"
@@ -20,7 +22,7 @@ begin
     gem.version = File.read('VERSION').chomp
 
   end
-  
+
   Jeweler::GemcutterTasks.new
 
 rescue LoadError
@@ -40,7 +42,7 @@ end
 # RDoc setup
 # ----------------------------------------------------------------------------
 Rake::RDocTask.new do |rdoc|
-  
+
   version = File.exists?("VERSION") ? File.read("VERSION") : ""
 
   rdoc.rdoc_dir = "rdoc"
