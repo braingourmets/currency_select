@@ -7,6 +7,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## x.y.z (unreleased)
 
 ### Added
+- Add a code of conduct 
+  ([#25](https://github.com/braingourmets/currency_select/pull/25))
 
 
 ### Changed
