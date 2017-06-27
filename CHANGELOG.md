@@ -21,6 +21,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 ### Fixed
+- Fix the check for only one active selection in the specs
+  ([#27](https://github.com/braingourmets/currency_select/pull/27))
 - Use ISO codes as select values, not the IDs
   ([#24](https://github.com/braingourmets/currency_select/pull/24))
 - Fix the the Gemfile
