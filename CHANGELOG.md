@@ -27,6 +27,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 ### Fixed
+- Add ActionView as explicit dependency
+  ([#34](https://github.com/braingourmets/currency_select/pull/34))
 - Fix the check for only one active selection in the specs
   ([#27](https://github.com/braingourmets/currency_select/pull/27))
 - Use ISO codes as select values, not the IDs
