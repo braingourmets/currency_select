@@ -29,3 +29,8 @@ Add the following to your Gemfile:
 This project adheres to a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
 By participating in this project and its community, you are expected to uphold
 this code.
+
+
+## Maintainers
+
+* [Oliver Klee](https://github.com/oliverklee)
