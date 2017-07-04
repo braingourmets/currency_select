@@ -4,7 +4,6 @@ require 'money'
 
 module CurrencySelect
   class << self
-
     ##
     # Money::Currency::table is a hash of this format for each entry:
     # id (lowercase) => {
@@ -22,10 +21,15 @@ module CurrencySelect
     #   iso_numeric: "978"
     #   smallest_denomination: 1
     # }
-    CURRENCIES = Money::Currency::table.inject([]) do |array, (id, currency)|
-      array << ["#{currency[:name]} - #{currency[:iso_code]}", currency[:iso_code]]
-    end.sort_by {|currency| currency.first} unless const_defined?('CURRENCIES')
-    # sort by the label (not by the ISO code)
+    unless const_defined?('CURRENCIES')
+      CURRENCIES = Money::Currency.table.inject([]) do |array, (_, currency)|
+        array << [
+          "#{currency[:name]} - #{currency[:iso_code]}", currency[:iso_code]
+        ]
+      end
+      # sort by the label (not by the ISO code)
+      CURRENCIES.sort_by(&:first)
+    end
 
     ##
     # Returns a two-dimensional array with ISO codes and currency names for
@@ -41,7 +45,8 @@ module CurrencySelect
       CURRENCIES
     end
 
-    # Return an array with ISO codes and currency names for currency ISO codes
+    ##
+    # Returns an array with ISO codes and currency names for currency ISO codes
     # passed as an argument
     # == Example
     #   priority_currencies_array([ "USD", "NOK" ])
