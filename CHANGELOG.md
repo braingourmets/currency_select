@@ -22,6 +22,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 ### Removed
+- Remove pre-Rails-4.0-specific code
+  ([#38](https://github.com/braingourmets/currency_select/pull/38))
 - Drop Jeweler
   ([#28](https://github.com/braingourmets/currency_select/pull/28))
 

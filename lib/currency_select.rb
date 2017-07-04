@@ -57,7 +57,6 @@ module CurrencySelect
     def priority_currencies_array(currency_codes = [])
       currency_codes.flat_map {|code| currencies_array.select {|currency| currency.last.to_s == code}}
     end
-
   end
 end
 
@@ -65,18 +64,10 @@ end
 module ActionView
   module Helpers
     module FormOptionsHelper
-
       # Return select and option tags for the given object and method, using
       # currency_options_for_select to generate the list of option tags.
       def currency_select(object, method, priority_currencies = nil, options = {}, html_options = {})
-        tag = if defined?(ActionView::Helpers::InstanceTag) &&
-          ActionView::Helpers::InstanceTag.instance_method(:initialize).arity != 0
-
-                InstanceTag.new(object, method, self, options.delete(:object))
-              else
-                CurrencySelectTag.new(object, method, self, options)
-              end
-
+        tag = CurrencySelectTag.new(object, method, self, options)
         tag.to_currency_select_tag(priority_currencies, options, html_options)
       end
 
@@ -112,15 +103,8 @@ module ActionView
       end
     end
 
-    if defined?(ActionView::Helpers::InstanceTag) &&
-      ActionView::Helpers::InstanceTag.instance_method(:initialize).arity != 0
-      class InstanceTag
-        include ToCurrencySelectTag
-      end
-    else
-      class CurrencySelectTag < Tags::Base
-        include ToCurrencySelectTag
-      end
+    class CurrencySelectTag < Tags::Base
+      include ToCurrencySelectTag
     end
 
     class FormBuilder
