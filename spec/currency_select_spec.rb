@@ -6,7 +6,6 @@ require 'currency_select'
 
 module ActionView
   module Helpers
-
     describe CurrencySelect do
       include TagHelper
 
@@ -21,20 +20,10 @@ module ActionView
       end
 
       let(:selected_eur_option) do
-        if defined?(Tags::Base)
-          content_tag(:option, 'Euro - EUR', selected: :selected, value: 'EUR')
-        else
-          '<option value="EUR" selected="selected">Euro - EUR</option>'
-        end
+        content_tag(:option, 'Euro - EUR', selected: :selected, value: 'EUR')
       end
 
-      let(:builder) do
-        if defined?(Tags::Base)
-          FormBuilder.new(:user, user, template, {})
-        else
-          FormBuilder.new(:user, user, template, {}, Proc.new {})
-        end
-      end
+      let(:builder) {FormBuilder.new(:user, user, template, {})}
 
       describe 'currency_select' do
         let(:tag) {builder.currency_select(:currency_code)}
