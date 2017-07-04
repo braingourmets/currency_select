@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.authors = ['Trond Arve Nordheim', 'Oliver Klee']
   s.email = 'o.klee@braingourmets.com'
 
-  s.files = %w(CHANGELOG.md currency_select.gemspec Gemfile LICENSE Rakefile README.md VERSION lib/currency_select.rb rails/init.rb spec/currency_select_spec.rb spec/spec_helper.rb)
+  s.files = %w(lib/currency_select.rb rails/init.rb CHANGELOG.md CODE_OF_CONDUCT.md currency_select.gemspec Gemfile LICENSE Rakefile README.md VERSION)
   s.extra_rdoc_files = %w(CHANGELOG.md LICENSE README.rdoc)
 
   s.add_runtime_dependency 'actionview'
