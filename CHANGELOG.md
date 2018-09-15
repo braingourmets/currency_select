@@ -19,7 +19,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 
 ### Fixed
-
+- Fix value call on Rails 5.2
+  ([#47](https://github.com/braingourmets/currency_select/pull/47))
 
 ### Security
 
