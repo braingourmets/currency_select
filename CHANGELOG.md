@@ -6,6 +6,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## x.y.z (unreleased)
 
 ### Added
+- Officially support Rails 5.2
+  ([#51](https://github.com/braingourmets/currency_select/pull/51))
 - Add Ruby 2.5.1 to the Travis build matrix
   ([#49](https://github.com/braingourmets/currency_select/pull/49))
 
@@ -40,8 +42,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Deprecated
 - Support for Rails < 5.0.0 will be removed in version 2.0.0.
 - Support for Rails < 4.2.0 will be removed in version 1.0.0.
-- Support for Ruby < 2.2.2 will be removed in version 2.0.0.
-- Support for Ruby < 2.0.0 will be removed in version 1.0.0.
+- Support for Ruby < 2.3.0 will be removed in version 1.0.0.
 
 ### Removed
 - Remove pre-Rails-4.0-specific code
@@ -56,7 +57,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   ([#27](https://github.com/braingourmets/currency_select/pull/27))
 - Use ISO codes as select values, not the IDs
   ([#24](https://github.com/braingourmets/currency_select/pull/24))
-- Fix the the Gemfile
+- Fix the Gemfile
   ([#19](https://github.com/braingourmets/currency_select/pull/19))
 - Fix the order of name attribute and ID in the specs
   ([#18](https://github.com/braingourmets/currency_select/pull/18))
