@@ -8,6 +8,8 @@ Gem::Specification.new do |s|
   s.version = version
   s.license = 'MIT'
 
+  s.required_ruby_version = '>= 2.3.0'
+
   s.homepage = 'https://github.com/braingourmets/currency_select'
   s.authors = ['Trond Arve Nordheim', 'Oliver Klee']
   s.email = 'o.klee@braingourmets.com'

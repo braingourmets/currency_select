@@ -3,28 +3,23 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-
 ## x.y.z (unreleased)
 
 ### Added
 
-
 ### Changed
-
 
 ### Deprecated
 
-
 ### Removed
-
+- Drop support for Ruby < 2.3
+  ([#48](https://github.com/braingourmets/currency_select/pull/48))
 
 ### Fixed
 - Fix value call on Rails 5.2
   ([#47](https://github.com/braingourmets/currency_select/pull/47))
 
 ### Security
-
-
 
 ## 0.2.0
 
@@ -34,11 +29,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Add a code of conduct
   ([#25](https://github.com/braingourmets/currency_select/pull/25))
 
-
 ### Changed
 - Mark all Ruby files as frozen_string_literal: true
   ([#31](https://github.com/braingourmets/currency_select/pull/31))
-
 
 ### Deprecated
 - Support for Rails < 5.0.0 will be removed in version 2.0.0.
@@ -46,13 +39,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Support for Ruby < 2.2.2 will be removed in version 2.0.0.
 - Support for Ruby < 2.0.0 will be removed in version 1.0.0.
 
-
 ### Removed
 - Remove pre-Rails-4.0-specific code
   ([#38](https://github.com/braingourmets/currency_select/pull/38))
 - Drop Jeweler
   ([#28](https://github.com/braingourmets/currency_select/pull/28))
-
 
 ### Fixed
 - Add ActionView as explicit dependency
