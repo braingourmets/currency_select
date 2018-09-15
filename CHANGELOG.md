@@ -6,6 +6,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## x.y.z (unreleased)
 
 ### Added
+- Add Ruby 2.5.1 to the Travis build matrix
+  ([#49](https://github.com/braingourmets/currency_select/pull/49))
 
 ### Changed
 
