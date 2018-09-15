@@ -20,6 +20,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   ([#48](https://github.com/braingourmets/currency_select/pull/48))
 
 ### Fixed
+- Add version to the requirements in the gemspec file
+  ([#53](https://github.com/braingourmets/currency_select/pull/53))
 - Fix file names references from the gemspec file
   ([#52](https://github.com/braingourmets/currency_select/pull/52))
 - Fix value call on Rails 5.2
