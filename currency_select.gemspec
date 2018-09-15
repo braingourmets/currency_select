@@ -17,7 +17,8 @@ Gem::Specification.new do |s|
   s.files = %w(lib/currency_select.rb rails/init.rb CHANGELOG.md CODE_OF_CONDUCT.md currency_select.gemspec Gemfile LICENSE Rakefile README.md VERSION)
   s.extra_rdoc_files = %w(CHANGELOG.md LICENSE README.rdoc)
 
-  s.add_runtime_dependency 'actionview'
+  s.add_runtime_dependency 'actionview', '>= 4.2.0', '< 6.0'
   s.add_runtime_dependency 'money'
+
   s.add_development_dependency 'rspec-rails'
 end
