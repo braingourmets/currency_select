@@ -1,7 +1,7 @@
 # currency_select change log
 
 All notable changes to this project will be documented in this file.
-This project adheres to [Semantic Versioning](http://semver.org/).
+This project adheres to [Semantic Versioning](https://semver.org/).
 
 ## x.y.z (unreleased)
 
@@ -28,6 +28,26 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   ([#47](https://github.com/braingourmets/currency_select/pull/47))
 
 ### Security
+
+## 1.0.0
+
+### Added
+- Officially support Rails 5.2
+  ([#51](https://github.com/braingourmets/currency_select/pull/51))
+- Add Ruby 2.5.1 to the Travis build matrix
+  ([#49](https://github.com/braingourmets/currency_select/pull/49))
+
+### Removed
+- Drop support for Ruby < 2.3
+  ([#48](https://github.com/braingourmets/currency_select/pull/48))
+
+### Fixed
+- Add version to the requirements in the gemspec file
+  ([#53](https://github.com/braingourmets/currency_select/pull/53))
+- Fix file names references from the gemspec file
+  ([#52](https://github.com/braingourmets/currency_select/pull/52))
+- Fix value call on Rails 5.2
+  ([#47](https://github.com/braingourmets/currency_select/pull/47))
 
 ## 0.2.0
 
