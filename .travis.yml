@@ -21,6 +21,7 @@ install:
 
 script:
   - bundle exec rspec spec/
+  - bundle exec rake rubocop
 
 jobs:
   fast_finish: true

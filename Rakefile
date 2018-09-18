@@ -12,3 +12,8 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_files.include('README.md')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+
+desc 'Runs RuboCop for checking the Ruby files.'
+task :rubocop do
+  sh 'rubocop lib/ rails/ spec/ currency_select.gemspec Gemfile Rakefile'
+end
