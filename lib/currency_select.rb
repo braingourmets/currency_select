@@ -55,7 +55,7 @@ module CurrencySelect
     # @return [Array]
     #
     def priority_currencies_array(currency_codes = [])
-      currency_codes.flat_map {|code| currencies_array.select {|currency| currency.last.to_s == code}}
+      currency_codes.flat_map { |code| currencies_array.select { |currency| currency.last.to_s == code } }
     end
   end
 end
@@ -80,7 +80,7 @@ module ActionView
         currency_options = ''.html_safe
 
         if priority_currencies
-          currency_options += options_for_select(::CurrencySelect::priority_currencies_array(priority_currencies), selected)
+          currency_options += options_for_select(::CurrencySelect.priority_currencies_array(priority_currencies), selected)
           currency_options += "<option value=\"\" disabled=\"disabled\">-------------</option>\n".html_safe
 
           # prevents selected from being included twice in the HTML which causes
@@ -90,7 +90,7 @@ module ActionView
         end
 
         # All the countries included in the country_options output.
-        return currency_options + options_for_select(::CurrencySelect::currencies_array, selected)
+        currency_options + options_for_select(::CurrencySelect.currencies_array, selected)
       end
     end
 
@@ -98,7 +98,7 @@ module ActionView
       def to_currency_select_tag(priority_currencies, options, html_options)
         html_options = html_options.stringify_keys
         add_default_name_and_id(html_options)
-        value = if self.method(:value).arity == 0
+        value = if method(:value).arity == 0
                   value()
                 else
                   value(object)
@@ -113,7 +113,7 @@ module ActionView
 
     class FormBuilder
       def currency_select(method, priority_currencies = nil, options = {}, html_options = {})
-        @template.currency_select(@object_name, method, priority_currencies, options.merge(:object => @object), html_options)
+        @template.currency_select(@object_name, method, priority_currencies, options.merge(object: @object), html_options)
       end
     end
   end

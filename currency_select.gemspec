@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-version = File.read(File.expand_path('../VERSION', __FILE__)).strip
+version = File.read(File.expand_path('VERSION', __dir__)).strip
 
 Gem::Specification.new do |s|
   s.name = 'currency_select'
@@ -14,8 +14,8 @@ Gem::Specification.new do |s|
   s.authors = ['Trond Arve Nordheim', 'Oliver Klee']
   s.email = 'o.klee@braingourmets.com'
 
-  s.files = %w(lib/currency_select.rb rails/init.rb CHANGELOG.md CODE_OF_CONDUCT.md currency_select.gemspec Gemfile LICENSE Rakefile README.md VERSION)
-  s.extra_rdoc_files = %w(CHANGELOG.md LICENSE README.md)
+  s.files = %w[lib/currency_select.rb rails/init.rb CHANGELOG.md CODE_OF_CONDUCT.md currency_select.gemspec Gemfile LICENSE Rakefile README.md VERSION]
+  s.extra_rdoc_files = %w[CHANGELOG.md LICENSE README.md]
 
   s.add_runtime_dependency 'actionview', '>= 4.2.0', '< 6.0'
   s.add_runtime_dependency 'money', '~> 6.0'
