@@ -18,6 +18,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Deprecated
 
 ### Removed
+- Drop support for Rails < 5.1
+  ([#62](https://github.com/braingourmets/currency_select/pull/62))
 - Drop support for Ruby < 2.4
   ([#61](https://github.com/braingourmets/currency_select/pull/61))
 - Drop support for Ruby < 2.3
