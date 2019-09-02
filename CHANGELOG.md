@@ -6,6 +6,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z (unreleased)
 
 ### Added
+- Add support for Rails 6.0
+  ([#60](https://github.com/braingourmets/currency_select/pull/60))
 - Officially support Rails 5.2
   ([#51](https://github.com/braingourmets/currency_select/pull/51))
 - Add Ruby 2.5.1 to the Travis build matrix
