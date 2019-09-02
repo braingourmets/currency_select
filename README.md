@@ -6,20 +6,22 @@
 Adds a currency_select helper to Ruby on Rails projects, allowing you to get
 a HTML select list of available currencies.
 
-The list of currencies are provided by the [Money](http://money.rubyforge.org/)
-gem.
-
+The list of currencies are provided by the
+[Money gem](https://rubygems.org/gems/money).
 
 ## Installation
 
 Add the following to your Gemfile:
 
-    gem 'currency_select'
-
+```ruby
+gem 'currency_select'
+```
 
 ## Example
 
-    currency_select("user", "currency")
+```ruby
+currency_select('user', 'currency')
+```
 
 ### form_for example
 ```
@@ -33,7 +35,6 @@ Add the following to your Gemfile:
 This project adheres to a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
 By participating in this project and its community, you are expected to uphold
 this code.
-
 
 ## Maintainers
 

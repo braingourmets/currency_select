@@ -6,16 +6,26 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z (unreleased)
 
 ### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## 2.0.0
+
+### Added
 - Add support for Rails 6.0
   ([#60](https://github.com/braingourmets/currency_select/pull/60))
 - Officially support Rails 5.2
   ([#51](https://github.com/braingourmets/currency_select/pull/51))
 - Add Ruby 2.5.1 to the Travis build matrix
   ([#49](https://github.com/braingourmets/currency_select/pull/49))
-
-### Changed
-
-### Deprecated
 
 ### Removed
 - Drop support for Rails < 5.1
@@ -32,8 +42,6 @@ This project adheres to [Semantic Versioning](https://semver.org/).
   ([#52](https://github.com/braingourmets/currency_select/pull/52))
 - Fix value call on Rails 5.2
   ([#47](https://github.com/braingourmets/currency_select/pull/47))
-
-### Security
 
 ## 1.0.0
 
