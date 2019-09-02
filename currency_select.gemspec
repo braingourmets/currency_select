@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version = version
   s.license = 'MIT'
 
-  s.required_ruby_version = '>= 2.3.0'
+  s.required_ruby_version = '>= 2.4.0'
 
   s.homepage = 'https://github.com/braingourmets/currency_select'
   s.authors = ['Trond Arve Nordheim', 'Oliver Klee']
@@ -20,5 +20,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'actionview', '>= 4.2.0', '< 6.0'
   s.add_runtime_dependency 'money', '~> 6.0'
 
-  s.add_development_dependency 'rspec-rails', '~> 3.8'
+  s.add_development_dependency 'rspec-rails', '~> 3.8.2'
 end
