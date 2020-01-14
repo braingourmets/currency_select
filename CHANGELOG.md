@@ -12,6 +12,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Deprecated
 
 ### Removed
+- Drop support for Rails < 5.2
+  ([#65](https://github.com/braingourmets/currency_select/pull/65))
 
 ### Fixed
 
