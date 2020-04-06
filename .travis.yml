@@ -1,5 +1,7 @@
 os: linux
 
+dist: bionic
+
 language: ruby
 
 cache: bundler
@@ -21,7 +23,7 @@ install:
 script:
   - bundle exec rspec spec/
 
-matrix:
+jobs:
   fast_finish: true
   exclude:
     - gemfile: gemfiles/Gemfile.rails-6-0

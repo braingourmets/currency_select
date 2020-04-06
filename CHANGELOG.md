@@ -21,7 +21,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 - Fix warnings in the `.travis.yml`
-  ([#67](https://github.com/braingourmets/currency_select/pull/67))
+  ([#67](https://github.com/braingourmets/currency_select/pull/67),
+  [#69](https://github.com/braingourmets/currency_select/pull/69))
 
 ### Security
 
