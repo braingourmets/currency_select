@@ -20,5 +20,5 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'actionview', '>= 5.2.0', '< 6.1'
   s.add_runtime_dependency 'money', '~> 6.0'
 
-  s.add_development_dependency 'rspec-rails', '~> 3.8.2'
+  s.add_development_dependency 'rspec-rails', '~> 4.0.0'
 end

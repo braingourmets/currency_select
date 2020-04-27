@@ -10,6 +10,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
   ([#66](https://github.com/braingourmets/currency_select/pull/66))
 
 ### Changed
+- Upgrade RSpec and RSpec-Rails
+  ([#71](https://github.com/braingourmets/currency_select/pull/71))
 - Update the Ruby versions on Travis CI
   ([#68](https://github.com/braingourmets/currency_select/pull/68))
 
