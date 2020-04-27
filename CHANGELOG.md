@@ -26,6 +26,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
   ([#65](https://github.com/braingourmets/currency_select/pull/65))
 
 ### Fixed
+- Fix some RuboCop warnings
+  ([#73](https://github.com/braingourmets/currency_select/pull/73))
 - Fix warnings in the `.travis.yml`
   ([#67](https://github.com/braingourmets/currency_select/pull/67),
   [#69](https://github.com/braingourmets/currency_select/pull/69))
