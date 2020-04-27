@@ -6,6 +6,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z (unreleased)
 
 ### Added
+- Check the code with RuboCop
+  ([#72](https://github.com/braingourmets/currency_select/pull/72))
 - Add support for Ruby 2.7
   ([#66](https://github.com/braingourmets/currency_select/pull/66))
 
