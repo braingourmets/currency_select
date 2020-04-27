@@ -57,7 +57,10 @@ module ActionView
           end
 
           it 'inserts a divider' do
-            expect(tag).to include('<option value="" disabled="disabled">-------------</option>')
+            expect(tag).to include(
+              '<option value="" disabled="disabled">' \
+              '-------------</option>'
+            )
           end
         end
       end

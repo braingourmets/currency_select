@@ -17,6 +17,10 @@ Lint/RaiseException:
 Lint/StructNewOverride:
   Enabled: true
 
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+
 Naming/FileName:
   Exclude:
     - 'gemfiles/Gemfile.*'
