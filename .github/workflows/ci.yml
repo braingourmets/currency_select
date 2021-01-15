@@ -16,7 +16,7 @@ jobs:
       - name: 'Set up Ruby'
         uses: actions/setup-ruby@v1
         with:
-          ruby: '2.7.2'
+          ruby-version: '3.0.0'
       - name: 'Check the environment'
         run: |
           ruby --version
@@ -37,7 +37,7 @@ jobs:
       - name: 'Set up Ruby'
         uses: actions/setup-ruby@v1
         with:
-          ruby: '${{ matrix.ruby }}'
+          ruby-version: '${{ matrix.ruby }}'
       - name: 'Check the environment'
         run: |
           ruby --version
@@ -61,6 +61,7 @@ jobs:
           - '2.5.8'
           - '2.6.6'
           - '2.7.2'
+          - '3.0.0'
         rails:
           - '5.2'
           - '6.0'
