@@ -6,36 +6,24 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z (unreleased)
 
 ### Added
-- Add support for Rails 6.1
-  ([#78](https://github.com/braingourmets/currency_select/pull/78),
-  [#79](https://github.com/braingourmets/currency_select/pull/79))
-- Check the code with RuboCop
-  ([#72](https://github.com/braingourmets/currency_select/pull/72))
-- Add support for Ruby 2.7
-  ([#66](https://github.com/braingourmets/currency_select/pull/66))
+- Add support for Rails 6.1 (#78, #79)
+- Check the code with RuboCop (#72)
+- Add support for Ruby 2.7 (#66)
 
 ### Changed
-- Switch the CI from Travis to GitHub Actions
-  ([#80](https://github.com/braingourmets/currency_select/pull/80))
-- Upgrade RSpec and RSpec-Rails
-  ([#71](https://github.com/braingourmets/currency_select/pull/71))
-- Update the Ruby versions on Travis CI
-  ([#68](https://github.com/braingourmets/currency_select/pull/68))
+- Switch the CI from Travis to GitHub Actions (#80)
+- Upgrade RSpec and RSpec-Rails (#71)
+- Update the Ruby versions on Travis CI (#68)
 
 ### Deprecated
 
 ### Removed
-- Drop support for Ruby 2.4
-  ([#70](https://github.com/braingourmets/currency_select/pull/70))
-- Drop support for Rails < 5.2
-  ([#65](https://github.com/braingourmets/currency_select/pull/65))
+- Drop support for Ruby 2.4 (#70)
+- Drop support for Rails < 5.2 (#65)
 
 ### Fixed
-- Fix some RuboCop warnings
-  ([#73](https://github.com/braingourmets/currency_select/pull/73))
-- Fix warnings in the `.travis.yml`
-  ([#67](https://github.com/braingourmets/currency_select/pull/67),
-  [#69](https://github.com/braingourmets/currency_select/pull/69))
+- Fix some RuboCop warnings (#73)
+- Fix warnings in the `.travis.yml` (#67, #69)
 
 ### Security
 
