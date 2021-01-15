@@ -7,7 +7,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 - Support Ruby 3 (#81)
-- Add support for Rails 6.1 (#78, #79)
+- Add support for Rails 6.1 (#78, #79, #83)
 - Check the code with RuboCop (#72)
 - Add support for Ruby 2.7 (#66)
 

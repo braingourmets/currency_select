@@ -14,7 +14,9 @@ module ActionView
       end
 
       let(:user) { User.new }
-      let(:template) { ActionView::Base.new }
+      let(:template) do
+        ActionView::Base.new(ActionView::LookupContext.new([]), {}, nil)
+      end
       let(:select_tag) do
         '<select name="user[currency_code]" id="user_currency_code">'
       end
