@@ -1,0 +1,14 @@
+---
+name: 'Publish to RubyGems.org'
+on:
+  push:
+    tags:
+      - 'v*'
+jobs:
+  publish:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: 'Release gem'
+        uses: dawidd6/action-publish-gem@v1
+        with:
+          api_key: ${{secrets.RUBYGEMS_API_KEY}}

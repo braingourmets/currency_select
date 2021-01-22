@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z (unreleased)
 
 ### Added
+- Add automatic gem release (#86) 
 - Support Ruby 3 (#81)
 - Add support for Rails 6.1 (#78, #79, #83)
 - Check the code with RuboCop (#72)
