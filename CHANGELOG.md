@@ -12,7 +12,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Add support for Ruby 2.7 (#66)
 
 ### Changed
-- Switch the CI from Travis to GitHub Actions (#80)
+- Switch the CI from Travis to GitHub Actions (#80, #85)
 - Upgrade RSpec and RSpec-Rails (#71)
 - Update the Ruby versions on Travis CI (#68)
 
