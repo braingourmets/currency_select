@@ -6,6 +6,20 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z (unreleased)
 
 ### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## 3.0.0
+
+### Added
 - Add automatic gem release (#86) 
 - Support Ruby 3 (#81)
 - Add support for Rails 6.1 (#78, #79, #83)
@@ -17,8 +31,6 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Upgrade RSpec and RSpec-Rails (#71)
 - Update the Ruby versions on Travis CI (#68)
 
-### Deprecated
-
 ### Removed
 - Drop support for Ruby 2.4 (#70)
 - Drop support for Rails < 5.2 (#65)
@@ -26,8 +38,6 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Fixed
 - Fix some RuboCop warnings (#73)
 - Fix warnings in the `.travis.yml` (#67, #69)
-
-### Security
 
 ## 2.0.0
 
