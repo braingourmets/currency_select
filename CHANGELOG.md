@@ -20,7 +20,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## 3.0.0
 
 ### Added
-- Add automatic gem release (#86) 
+- Add automatic gem release (#86, #88)
 - Support Ruby 3 (#81)
 - Add support for Rails 6.1 (#78, #79, #83)
 - Check the code with RuboCop (#72)
