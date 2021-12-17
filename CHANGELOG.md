@@ -6,18 +6,24 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z (unreleased)
 
 ### Added
-- Add support for Rails 7.0 (#96)
 
 ### Changed
 
 ### Deprecated
 
 ### Removed
-- Drop support for Ruby 2.5 (#90)
 
 ### Fixed
 
 ### Security
+
+## 4.0.0
+
+### Added
+- Add support for Rails 7.0 (#96)
+
+### Removed
+- Drop support for Ruby 2.5 (#90)
 
 ## 3.0.0
 
