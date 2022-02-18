@@ -19,3 +19,6 @@ Metrics/BlockLength:
 Naming/FileName:
   Exclude:
     - 'gemfiles/*.gemfile'
+
+Gemspec/RequireMFA:
+  Enabled: false
