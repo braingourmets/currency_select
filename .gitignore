@@ -1,7 +1,8 @@
-.DS_Store
-.document
-*.swp
-coverage
-Gemfile.lock
-rdoc
-pkg
+/*.gemfile.lock
+/.bundle/
+/.yardoc
+/Gemfile.lock
+/coverage/
+/pkg/
+/rdoc/
+/vendor/
