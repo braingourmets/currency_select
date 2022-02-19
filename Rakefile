@@ -14,6 +14,6 @@ Rake::RDocTask.new do |rdoc|
 end
 
 desc 'Runs RuboCop for checking the Ruby files.'
-task :rubocop do
+task rubocop: :environment do
   sh 'rubocop lib/ rails/ spec/ currency_select.gemspec Gemfile Rakefile'
 end
