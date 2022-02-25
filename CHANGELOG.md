@@ -6,7 +6,6 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z (unreleased)
 
 ### Added
-- Add support for Ruby 3.1 (#105)
 
 ### Changed
 
@@ -17,6 +16,11 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Fixed
 
 ### Security
+
+## 4.1.0
+
+### Added
+- Add support for Ruby 3.1 (#105)
 
 ## 4.0.0
 
