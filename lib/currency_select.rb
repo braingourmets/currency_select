@@ -100,7 +100,7 @@ module ActionView
           )
           label = '-------------'.html_safe
           option = content_tag(:option, label, value: '', disabled: 'disabled')
-          currency_options += option + "\n"
+          currency_options += option
 
           # prevents selected from being included twice in the HTML which causes
           # some browsers to select the second selected option (not priority)
