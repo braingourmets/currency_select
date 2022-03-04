@@ -6,7 +6,7 @@ require:
 
 AllCops:
   TargetRubyVersion: 2.7
-  TargetRailsVersion: 5.2
+  TargetRailsVersion: 6.0
   NewCops: enable
 
 Layout/IndentationConsistency:
