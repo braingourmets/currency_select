@@ -22,3 +22,6 @@ Naming/FileName:
 
 Gemspec/RequireMFA:
   Enabled: false
+
+Rails/RakeEnvironment:
+  Enabled: false
