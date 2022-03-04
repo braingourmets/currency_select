@@ -98,8 +98,9 @@ module ActionView
             ::CurrencySelect.priority_currencies_array(priority_currencies),
             selected
           )
-          raw = '<option value="" disabled="disabled">-------------</option>'
-          currency_options += raw.html_safe + "\n"
+          label = '-------------'.html_safe
+          option = content_tag(:option, label, value: '', disabled: 'disabled')
+          currency_options += option + "\n"
 
           # prevents selected from being included twice in the HTML which causes
           # some browsers to select the second selected option (not priority)
