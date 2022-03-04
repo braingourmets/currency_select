@@ -3,17 +3,14 @@
 require 'spec_helper'
 require 'action_view'
 require 'currency_select'
+require 'support/dummy_user'
 
 module ActionView
   module Helpers
     describe CurrencySelect do
       include TagHelper
 
-      class User
-        attr_accessor :currency_code
-      end
-
-      let(:user) { User.new }
+      let(:user) { DummyUser.new }
       let(:template) do
         ActionView::Base.new(ActionView::LookupContext.new([]), {}, nil)
       end
