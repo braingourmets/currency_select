@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'money', '~> 6.0'
 
   s.add_development_dependency 'rspec-rails', '~> 5.1.0'
-  s.add_development_dependency 'rubocop', '~> 1.25.1'
+  s.add_development_dependency 'rubocop', '~> 1.26.0'
   s.add_development_dependency 'rubocop-rails', '~> 2.13.2'
   s.add_development_dependency 'rubocop-rake', '~> 0.6.0'
   s.add_development_dependency 'rubocop-rspec', '~> 2.8.0'
