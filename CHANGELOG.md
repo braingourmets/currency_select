@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Changed
 - Drop whitespace between HTML tags (#115)
+- Allow the non-formbuilder version to set the selected option (#134)
 
 ### Deprecated
 
