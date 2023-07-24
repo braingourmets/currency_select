@@ -9,6 +9,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Add official support for Ruby 3.2 (#125)
 
 ### Changed
+- Allow the non-formbuilder version to set the selected option (#134)
 - Drop whitespace between HTML tags (#115)
 
 ### Deprecated
