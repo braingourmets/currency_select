@@ -6,13 +6,21 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## x.y.z (unreleased)
 
 ### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+## 5.0.0
+
+### Added
 - Add official support for Ruby 3.2 (#125)
 
 ### Changed
 - Allow the non-formbuilder version to set the selected option (#134)
 - Drop whitespace between HTML tags (#115)
-
-### Deprecated
 
 ### Removed
 - Drop support for Rails 5.2 (#112)
