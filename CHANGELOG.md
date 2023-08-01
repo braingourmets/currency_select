@@ -14,9 +14,13 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Removed
 
 ### Fixed
-- Add missing files to the gemspec file (#137)
 
 ### Security
+
+## 5.0.1
+
+### Fixed
+- Add missing files to the gemspec file (#137)
 
 ## 5.0.0
 
