@@ -13,6 +13,11 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Removed
 
+### Fixed
+- Add missing files to the gemspec file (#137)
+
+### Security
+
 ## 5.0.0
 
 ### Added
@@ -25,10 +30,6 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Removed
 - Drop support for Rails 5.2 (#112)
 - Drop support for Ruby 2.6 and 2.7 (#111, #132)
-
-### Fixed
-
-### Security
 
 ## 4.1.0
 
