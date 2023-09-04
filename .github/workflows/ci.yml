@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-22.04
     timeout-minutes: 2
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: 'Set up Ruby'
         uses: ruby/setup-ruby@v1
         with:
@@ -34,7 +34,7 @@ jobs:
     name: "Tests: Ruby ${{ matrix.ruby }} / Rails ${{ matrix.rails }}"
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: 'Set up Ruby'
         uses: ruby/setup-ruby@v1
         with:
