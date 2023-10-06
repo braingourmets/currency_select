@@ -59,9 +59,6 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - { 'rails': '6.0', 'ruby': '3.0.6' }
-          - { 'rails': '6.0', 'ruby': '3.1.4' }
-          - { 'rails': '6.0', 'ruby': '3.2.2' }
           - { 'rails': '6.1', 'ruby': '3.0.6' }
           - { 'rails': '6.1', 'ruby': '3.1.4' }
           - { 'rails': '6.1', 'ruby': '3.2.2' }

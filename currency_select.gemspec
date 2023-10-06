@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   ]
   s.extra_rdoc_files = %w[CHANGELOG.md LICENSE README.md]
 
-  s.add_runtime_dependency 'actionview', '>= 6.0.0', '< 7.1'
+  s.add_runtime_dependency 'actionview', '>= 6.1.0', '< 7.1'
   s.add_runtime_dependency 'money', '~> 6.0'
 
   s.add_development_dependency 'rspec-rails', '~> 5.1.0'
