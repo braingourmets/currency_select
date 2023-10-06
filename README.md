@@ -9,6 +9,12 @@ a HTML select list of available currencies.
 The list of currencies are provided by the
 [Money gem](https://rubygems.org/gems/money).
 
+## New maintainer wanted
+
+We're not using this gem anymore, so we'm looking for a new maintainer. If
+you're interested in becoming the new maintainer, please contact us at
+`info AT braingourmets DOT com`.
+
 ## Installation
 
 Add the following to your Gemfile:
