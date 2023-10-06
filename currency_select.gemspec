@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'actionview', '>= 6.1.0', '< 7.1'
   s.add_runtime_dependency 'money', '~> 6.0'
 
-  s.add_development_dependency 'rspec-rails', '~> 5.1.0'
+  s.add_development_dependency 'rspec-rails', '~> 6.0.3'
   s.add_development_dependency 'rubocop', '~> 1.56.4'
   s.add_development_dependency 'rubocop-rails', '~> 2.21.2'
   s.add_development_dependency 'rubocop-rake', '~> 0.6.0'
