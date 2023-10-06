@@ -45,7 +45,7 @@ module ActionView
 
         it 'does not mark two currencies as selected' do
           user.currency_code = 'USD'
-          expect(tag.scan(/selected="selected"/).count).to eq(1)
+          expect(tag.scan('selected="selected"').count).to eq(1)
         end
 
         describe 'priority currencies' do
