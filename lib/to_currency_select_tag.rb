@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'form_options_helper'
 
 # CurrencySelect
