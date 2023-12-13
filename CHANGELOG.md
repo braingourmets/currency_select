@@ -7,7 +7,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
-- Add support for Rails 7.1 (#146, #148, #149),
+- Add support for Rails 7.1 (#146, #148, #149, #150),
   thanks to @hishammalik and @pnicholls
 
 ### Changed
