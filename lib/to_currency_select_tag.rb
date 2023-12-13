@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'form_options_helper'
+
 # CurrencySelect
 module ActionView
   module Helpers

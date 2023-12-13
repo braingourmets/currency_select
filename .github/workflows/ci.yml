@@ -6,62 +6,65 @@ on:
       - main
   pull_request:
   schedule:
-    - cron: '15 3 * * 1'
+    - cron: "15 3 * * 1"
 jobs:
   static-analysis:
-    name: 'Static analysis'
+    name: "Static analysis"
     runs-on: ubuntu-22.04
     timeout-minutes: 2
     steps:
       - uses: actions/checkout@v4
-      - name: 'Set up Ruby'
+      - name: "Set up Ruby"
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2.2'
-      - name: 'Check the environment'
+          ruby-version: "3.2.2"
+      - name: "Check the environment"
         run: |
           ruby --version
           gem --version
-      - name: 'Install bundler'
+      - name: "Install bundler"
         run: |
           gem install bundler
           bundle --version
-      - name: 'Install gems'
-        run: 'bundle install --jobs 4 --retry 3'
-      - name: 'Run RuboCop'
-        run: 'bundle exec rake rubocop'
+      - name: "Install gems"
+        run: "bundle install --jobs 4 --retry 3"
+      - name: "Run RuboCop"
+        run: "bundle exec rake rubocop"
   test:
     name: "Tests: Ruby ${{ matrix.ruby }} / Rails ${{ matrix.rails }}"
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - name: 'Set up Ruby'
+      - name: "Set up Ruby"
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '${{ matrix.ruby }}'
-      - name: 'Check the environment'
+          ruby-version: "${{ matrix.ruby }}"
+      - name: "Check the environment"
         run: |
           ruby --version
           gem --version
-      - name: 'Install bundler'
+      - name: "Install bundler"
         run: |
           gem install bundler
           bundle --version
-      - name: 'Install gems'
+      - name: "Install gems"
         env:
           MATRIX_RAILS_VERSION: ${{ matrix.rails }}
         run: |
           export BUNDLE_GEMFILE="${GITHUB_WORKSPACE}/gemfiles/rails-${MATRIX_RAILS_VERSION}.gemfile"
           bundle install --jobs 4 --retry 3
-      - name: 'Run the tests'
-        run: 'bundle exec rspec spec/'
+      - name: "Run the tests"
+        run: "bundle exec rspec spec/"
     strategy:
       fail-fast: false
       matrix:
         include:
-          - { 'rails': '6.1', 'ruby': '3.0.6' }
-          - { 'rails': '6.1', 'ruby': '3.1.4' }
-          - { 'rails': '6.1', 'ruby': '3.2.2' }
-          - { 'rails': '7.0', 'ruby': '3.0.6' }
-          - { 'rails': '7.0', 'ruby': '3.1.4' }
-          - { 'rails': '7.0', 'ruby': '3.2.2' }
+          - { "rails": "6.1", "ruby": "3.0.6" }
+          - { "rails": "6.1", "ruby": "3.1.4" }
+          - { "rails": "6.1", "ruby": "3.2.2" }
+          - { "rails": "7.0", "ruby": "3.0.6" }
+          - { "rails": "7.0", "ruby": "3.1.4" }
+          - { "rails": "7.0", "ruby": "3.2.2" }
+          - { "rails": "7.1", "ruby": "3.0.6" }
+          - { "rails": "7.1", "ruby": "3.1.4" }
+          - { "rails": "7.1", "ruby": "3.2.2" }

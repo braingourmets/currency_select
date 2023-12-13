@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'to_currency_select_tag'
+require 'form_options_helper'
 
 # CurrencySelect
 module ActionView
@@ -10,6 +11,8 @@ module ActionView
     #
     class CurrencySelectTag < Tags::Base
       include ToCurrencySelectTag
+      include FormOptionsHelper
+      include ActionView::Helpers::Tags::SelectRenderer if defined?(ActionView::Helpers::Tags::SelectRenderer)
     end
   end
 end
