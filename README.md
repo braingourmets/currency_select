@@ -30,6 +30,7 @@ currency_select('user', 'currency')
 ```
 
 ### form_for example
+
 ```
 <%= f.currency_select(:currency, ["USD", "EUR", "CAD"], {}, {class: "form-control"}) -%>
 ```
