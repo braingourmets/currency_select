@@ -7,20 +7,26 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
-- Add support for Rails 7.1 (#146, #148, #149, #150),
-  thanks to @hishammalik and @pnicholls
-
 ### Changed
 
 ### Deprecated
 
 ### Removed
 
-- Drop support for Rails 6.0 (#142)
-
 ### Fixed
 
 ### Security
+
+## 6.0.0
+
+### Added
+
+- Add support for Rails 7.1 (#146, #148, #149, #150),
+  thanks to @hishammalik and @pnicholls
+
+### Removed
+
+- Drop support for Rails 6.0 (#142)
 
 ## 5.0.1
 
