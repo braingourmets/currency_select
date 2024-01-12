@@ -7,6 +7,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- Add official support for Ruby 3.3 (#156)
+
 ### Changed
 
 ### Deprecated
