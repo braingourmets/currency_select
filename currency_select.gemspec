@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version = version
   s.license = 'MIT'
 
-  s.required_ruby_version = '>= 3.0.0'
+  s.required_ruby_version = '>= 3.1.0'
 
   s.homepage = 'https://github.com/braingourmets/currency_select'
   s.authors = ['Trond Arve Nordheim', 'Oliver Klee']
