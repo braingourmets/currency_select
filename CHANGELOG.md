@@ -15,6 +15,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Removed
 
+- Drop support for Ruby 3.0 (#161)
+
 ### Fixed
 
 ### Security
