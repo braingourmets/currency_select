@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- Add support for Rails 7.2 (#176)
 - Add official support for Ruby 3.3 (#156)
 
 ### Changed
