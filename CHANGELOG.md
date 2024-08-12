@@ -7,20 +7,26 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
-- Add support for Rails 7.2 (#176)
-- Add official support for Ruby 3.3 (#156)
-
 ### Changed
 
 ### Deprecated
 
 ### Removed
 
-- Drop support for Ruby 3.0 (#161)
-
 ### Fixed
 
 ### Security
+
+## 7.0.0
+
+### Added
+
+- Add support for Rails 7.2 (#176)
+- Add official support for Ruby 3.3 (#156)
+
+### Removed
+
+- Drop support for Ruby 3.0 (#161)
 
 ## 6.0.0
 
