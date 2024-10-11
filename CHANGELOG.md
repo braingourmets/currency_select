@@ -7,6 +7,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- Add support for Rails 8.0 (#179)
+
 ### Changed
 
 ### Deprecated
