@@ -15,6 +15,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Removed
 
+- Drop support for Rails 6.1 (#183)
+
 ### Fixed
 
 ### Security
