@@ -7,19 +7,25 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
-- Add support for Rails 8.0 (#179)
-
 ### Changed
 
 ### Deprecated
 
 ### Removed
 
-- Drop support for Rails 6.1 (#183)
-
 ### Fixed
 
 ### Security
+
+## 8.0.0: Add support for Rails 8.0, drop support for Rails 6.1
+
+### Added
+
+- Add support for Rails 8.0 (#179)
+
+### Removed
+
+- Drop support for Rails 6.1 (#183)
 
 ## 7.0.0
 
