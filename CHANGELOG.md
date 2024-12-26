@@ -7,8 +7,6 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
-- Add support for Ruby 3.4 (#187)
-
 ### Changed
 
 ### Deprecated
@@ -18,6 +16,10 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Fixed
 
 ### Security
+
+## 8.1.0: Add support for Ruby 3.4
+
+- Add support for Ruby 3.4 (#187)
 
 ## 8.0.0: Add support for Rails 8.0, drop support for Rails 6.1
 
