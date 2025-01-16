@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
+# This line can be dropped once we no longer support Rails 7.0.
+require 'logger'
 require 'action_view'
 require 'currency_select'
 require 'support/dummy_user'
