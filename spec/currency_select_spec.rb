@@ -3,6 +3,8 @@
 require 'spec_helper'
 # This line can be dropped once we no longer support Rails 7.0.
 require 'logger'
+# This line can be dropped once we no longer support Rails 7.1 and 7.2.
+require 'uri'
 require 'action_view'
 require 'currency_select'
 require 'support/dummy_user'
