@@ -27,7 +27,7 @@ jobs:
       - name: 'Run RuboCop'
         run: 'bundle exec rake rubocop'
   test:
-    name: "Tests: Ruby ${{ matrix.ruby }} / Rails ${{ matrix.rails }}"
+    name: Tests: Ruby ${{ matrix.ruby }} / Rails ${{ matrix.rails }}
     runs-on: ubuntu-24.04
     env:
       BUNDLE_GEMFILE: "${{ github.workspace }}/gemfiles/rails-${{ matrix.rails }}.gemfile"
