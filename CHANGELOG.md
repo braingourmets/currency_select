@@ -20,6 +20,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 
+- Avoid calling a private method (#212)
+
 ### Security
 
 ## 8.1.0: Add support for Ruby 3.4

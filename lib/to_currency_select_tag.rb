@@ -9,7 +9,7 @@ module ActionView
     module ToCurrencySelectTag
       def to_currency_select_tag(priority_currencies, options, html_options)
         html_options = html_options.stringify_keys
-        add_default_name_and_id(html_options)
+        add_default_html_options(html_options)
         value = if method(:value).arity.zero?
                   options.fetch(:selected) { value() }
                 else
@@ -24,6 +24,19 @@ module ActionView
           ),
           html_options
         )
+      end
+
+      def add_default_html_options(options, field = 'id')
+        index = name_and_id_index(options)
+        options['name'] = options.fetch('name') { tag_name(options['multiple'], index) }
+
+        return unless generate_ids?
+
+        options[field] = options.fetch(field) { tag_id(index, options.delete('namespace')) }
+        namespace = options.delete('namespace')
+        return unless namespace
+
+        options[field] = options[field] ? "#{namespace}_#{options[field]}" : namespace
       end
     end
   end
