@@ -7,6 +7,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- Add support for Rails 8.1 (#213)
+
 ### Changed
 
 - Require money >= 6.19.0 (#210)
