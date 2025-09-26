@@ -9,6 +9,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Changed
 
+- Require money >= 6.19.0 (#210)
+
 ### Deprecated
 
 ### Removed
