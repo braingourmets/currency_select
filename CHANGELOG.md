@@ -14,7 +14,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Removed
 
 - Drop support for Ruby 3.1 (#200)
-- Drop support for Rails 7.0 (#199, #201)
+- Drop support for Rails 7.0 and 7.1 (#199, #201, #208)
 
 ### Fixed
 
