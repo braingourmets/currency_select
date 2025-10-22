@@ -7,13 +7,25 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## 9.0.0: Add support for Rails 8.1, drop support for Ruby 3.1 and Rails < 7.2
+
+### Added
+
 - Add support for Rails 8.1 (#213, #216, #217)
 
 ### Changed
 
 - Require money >= 6.19.0 (#210)
-
-### Deprecated
 
 ### Removed
 
