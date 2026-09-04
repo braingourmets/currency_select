@@ -4,15 +4,15 @@
 [![Gem Version](https://badge.fury.io/rb/currency_select.svg)](http://badge.fury.io/rb/currency_select)
 
 Adds a currency_select helper to Ruby on Rails projects, allowing you to get
-a HTML select list of available currencies.
+an HTML select list of available currencies.
 
-The list of currencies are provided by the
+The list of currencies is provided by the
 [Money gem](https://rubygems.org/gems/money).
 
 ## New maintainer wanted
 
-We're not using this gem anymore, so we'm looking for a new maintainer. If
-you're interested in becoming the new maintainer, please contact us at
+We're not using this gem anymore, so we are looking for a new maintainer. If
+you are interested in becoming the new maintainer, please contact us at
 `info AT braingourmets DOT com`.
 
 ## Installation
