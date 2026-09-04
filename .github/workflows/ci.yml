@@ -73,9 +73,6 @@ jobs:
 
     timeout-minutes: 2
 
-    permissions:
-      security-events: read # necessary so that the job can also run after the merge to main
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -85,4 +82,5 @@ jobs:
       - name: Run zizmor 🌈
         uses: zizmorcore/zizmor-action@70fb788f84895a7701f5643d103d587e460b5c99 # v0.6.3
         with:
+          advanced-security: false
           persona: auditor
