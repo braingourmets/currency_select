@@ -15,6 +15,7 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Removed
 
+- Drop support for Rails 7.2 (#248)
 - Drop support for Ruby 3.2 (#230)
 
 ### Fixed
