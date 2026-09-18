@@ -18,10 +18,6 @@ Metrics/BlockLength:
   Exclude:
     - 'spec/**/*.rb'
 
-Naming/FileName:
-  Exclude:
-    - 'gemfiles/*.gemfile'
-
 Gemspec/RequireMFA:
   Enabled: false
 
