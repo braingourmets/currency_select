@@ -1,5 +1,5 @@
 ---
-name: 'Publish'
+name: 'Push gem'
 
 on:
   push:
@@ -13,12 +13,13 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  push:
     name: 'Publish to RubyGems'
     runs-on: ubuntu-26.04
     timeout-minutes: 2
     permissions:
       id-token: write # trusted publishing + attestations
+    environment: release
 
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
