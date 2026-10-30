@@ -1,11 +1,9 @@
 # frozen_string_literal: true
 
-version = File.read(File.expand_path('VERSION', __dir__)).strip
-
 Gem::Specification.new do |s|
   s.name = 'currency_select'
   s.summary = 'Currency select plugin for Rails'
-  s.version = version
+  s.version = '10.0.0'
   s.license = 'MIT'
 
   s.required_ruby_version = '>= 3.3.0'
@@ -20,7 +18,6 @@ Gem::Specification.new do |s|
     LICENSE
     README.md
     Rakefile
-    VERSION
     currency_select.gemspec
     lib/currency_select.rb
     lib/currency_select_tag.rb
