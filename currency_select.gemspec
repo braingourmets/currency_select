@@ -25,11 +25,4 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'actionview', '>= 8.0.0', '< 8.2'
   s.add_dependency 'money', '~> 6.19.0'
-
-  s.add_development_dependency 'rspec-rails', '~> 8.0.4'
-  s.add_development_dependency 'rubocop', '~> 1.90.0'
-  s.add_development_dependency 'rubocop-rails', '~> 2.37.0'
-  s.add_development_dependency 'rubocop-rake', '~> 0.7.1'
-  s.add_development_dependency 'rubocop-rspec', '~> 3.10.2'
-  s.add_development_dependency 'rubocop-rspec_rails', '~> 2.32.0'
 end
