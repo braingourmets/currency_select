@@ -12,6 +12,14 @@ Gem::Specification.new do |s|
   s.authors = ['Trond Arve Nordheim', 'Oliver Klee']
   s.email = 'o.klee@braingourmets.com'
 
+  s.metadata = {
+    'bug_tracker_uri' => 'https://github.com/braingourmets/currency_select/issues',
+    'changelog_uri' => 'https://github.com/braingourmets/currency_select/blob/master/CHANGELOG.md',
+    'documentation_uri' => 'https://www.rubydoc.info/gems/currency_select',
+    'homepage_uri' => s.homepage,
+    'source_code_uri' => 'https://github.com/braingourmets/currency_select'
+  }
+
   s.files = %w[
     CHANGELOG.md
     Gemfile
