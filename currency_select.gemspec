@@ -15,10 +15,18 @@ Gem::Specification.new do |s|
   s.email = 'o.klee@braingourmets.com'
 
   s.files = %w[
-    CHANGELOG.md CODE_OF_CONDUCT.md Gemfile LICENSE README.md Rakefile VERSION
+    CHANGELOG.md
+    Gemfile
+    LICENSE
+    README.md
+    Rakefile
+    VERSION
     currency_select.gemspec
-    lib/currency_select.rb lib/currency_select_tag.rb lib/form_builder.rb
-    lib/form_options_helper.rb lib/to_currency_select_tag.rb
+    lib/currency_select.rb
+    lib/currency_select_tag.rb
+    lib/form_builder.rb
+    lib/form_options_helper.rb
+    lib/to_currency_select_tag.rb
     rails/init.rb
   ]
   s.extra_rdoc_files = %w[CHANGELOG.md LICENSE README.md]
