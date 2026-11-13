@@ -19,6 +19,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ## 10.1.0: Add support for Money 7.x
 
+### Added
+
 - Add support for Money 7.x (#306)
 
 ## 10.0.0: Add support for Ruby 4.0, drop support for Rails 7.2 and Ruby 3.2
