@@ -3,7 +3,7 @@
 Gem::Specification.new do |spec|
   spec.name = 'currency_select'
   spec.summary = 'Currency select plugin for Rails'
-  spec.version = '10.0.0'
+  spec.version = '10.1.0'
   spec.license = 'MIT'
 
   spec.required_ruby_version = '>= 3.3.0'
