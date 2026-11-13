@@ -7,6 +7,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- Add support for Money 7.x (#306)
+
 ### Changed
 
 ### Deprecated
