@@ -37,5 +37,5 @@ Gem::Specification.new do |spec|
   spec.extra_rdoc_files = %w[CHANGELOG.md LICENSE README.md]
 
   spec.add_dependency 'actionview', '>= 8.0.0', '< 8.2'
-  spec.add_dependency 'money', '~> 6.19.0'
+  spec.add_dependency 'money', '>= 6.19.0', '< 8.0.0'
 end
